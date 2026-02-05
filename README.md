@@ -14,4 +14,11 @@ That's what the PATH is for, it lists folders the OS looks at before running a c
 echo $PATH
 ```
 
-It is! Great!
+I did this next step before checking if it was, but it would be pretty weird if `~/bin` was in PATH when it didn't exist.
+
+Anyway, I went to `/home/username/.config/fish/` and opened `config.fish`. Then added this:
+```
+if test -d "$HOME/bin"
+    fish_add_path "$HOME/bin"
+end
+```
