@@ -22,3 +22,25 @@ if test -d "$HOME/bin"
     fish_add_path "$HOME/bin"
 end
 ```
+## Fish (the shell, not the meaningless animal category)
+
+The default shell of CachyOS is fish.
+
+### Fastfetch
+
+Fastfetch is the little program that runs everytime you start an instance of the terminal. I'm fine with this.
+
+To customize it, go to `~/.config/fastfetch/`. If this doesn't exist, do `fastfetch --gen-config`.
+
+The file we want to customize is `config.jsonc`. Look up what stuff does on the internet.
+
+Notably, the following bit of code allows customization of the image:
+```
+"logo": {
+        "source": "/home/eurico/.config/fastfetch/cachyos_logo2.png",
+        "height": 28,
+        "padding": {
+            "top": 1
+        }
+    },
+```
