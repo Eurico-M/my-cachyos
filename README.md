@@ -26,6 +26,10 @@ end
 
 The default shell of CachyOS is fish.
 
+Turns out, you can have multiple shells on your system and, as long as you use the correct syntax, you can run scripts from multiple shells.
+
+For instance, I wrote a script in Zsh thinking that's what CachyOS was using. But because the script is written correctly, and I use the correct shebang (the first line on the script that tells the system what shell to use, in this case `#!/usr/bin/zsh`, it works just fine.
+
 ### Fastfetch
 
 Fastfetch is the little program that runs everytime you start an instance of the terminal. I'm fine with this.
