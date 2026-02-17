@@ -30,6 +30,10 @@ Turns out, you can have multiple shells on your system and, as long as you use t
 
 For instance, I wrote a script in Zsh thinking that's what CachyOS was using. But because the script is written correctly, and I use the correct shebang (the first line on the script that tells the system what shell to use, in this case `#!/usr/bin/zsh`, it works just fine.
 
+### Useful commands:
+
+`fish_config` opens a nice GUI to configure stuff.
+
 ### Fastfetch
 
 Fastfetch is the little program that runs everytime you start an instance of the terminal. I'm fine with this.
