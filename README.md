@@ -52,3 +52,6 @@ Notably, the following bit of code allows customization of the image:
         }
     },
 ```
+## Sudo password error
+
+This is a weird one. Randomly (I can't think of a reason) my sudo password stopped working. It wasn't a typo or keyboard configuration. I fixed it with `faillock --reset`.
