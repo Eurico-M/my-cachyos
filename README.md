@@ -55,3 +55,14 @@ Notably, the following bit of code allows customization of the image:
 ## Sudo password error
 
 This is a weird one. Randomly (I can't think of a reason) my sudo password stopped working. It wasn't a typo or keyboard configuration. I fixed it with `faillock --reset`.
+
+## Printers
+
+My printer wasn't working. There wasn't even an option for Printers in the settings. So I randomly found this set of commands:
+
+```
+sudo pacman -S cups
+sudo systemctl enable --now cups
+sudo pacman -S print-manager system-config-printer
+```
+We install CUPS, we enable it, and we install the print-manager to add the Printer option to the settings (I think).
