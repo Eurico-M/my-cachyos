@@ -33,6 +33,7 @@ For instance, I wrote a script in Zsh thinking that's what CachyOS was using. Bu
 ### Useful commands:
 
 `fish_config` opens a nice GUI to configure stuff.
+
 `exec fish` restarts fish and loads any eventual new stuff we put in config.fish
 
 ### Fastfetch
