@@ -68,3 +68,13 @@ sudo systemctl enable --now cups
 sudo pacman -S print-manager system-config-printer
 ```
 We install CUPS, we enable it, and we install the print-manager to add the Printer option to the settings (I think).
+
+## Desktop Files
+
+Apparently, .desktop files are stored in `/usr/share/applications/` for system-wide stuff, although you may want to copy the relevant one to `~/.local/share/applications/` and edit that one instead. Besides not requiring sudo stuff, it should also stay there unmodified even if the application gets updated and the .desktop file is reset in /usr/share.
+
+### System Volume Resetting
+
+So Chromium applications have this weird need to fuck with your system, specifically to alter the volume of the input microphone. To prevent that there's this famous `--disable-features=WebRtcAllowInputVolumeAdjustment` launch argument.
+
+To add this to the Vesktop .desktop file specifically, we must edit the line that starts with `Exec=` to read `Exec=/usr/bin/vesktop --disable-features=WebRtcAllowInputVolumeAdjustment %U`.
