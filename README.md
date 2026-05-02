@@ -78,3 +78,16 @@ Apparently, .desktop files are stored in `/usr/share/applications/` for system-w
 So Chromium applications have this weird need to fuck with your system, specifically to alter the volume of the input microphone. To prevent that there's this famous `--disable-features=WebRtcAllowInputVolumeAdjustment` launch argument.
 
 To add this to the Vesktop .desktop file specifically, we must edit the line that starts with `Exec=` to read `Exec=/usr/bin/vesktop --disable-features=WebRtcAllowInputVolumeAdjustment %U`.
+
+## Sound 
+
+### Default sound settings
+
+#### Playback Devices:
+- US-2x2 Analog Stereo - Profile: Analog Stereo Duplex
+- Starship/Matisse HD Audio Controller Digital Stereo - Profile: Digital Stereo Output + Analog Stereo Input
+
+#### Recording Devices:
+- US-2x2 Analog Stereo - Profile: Analog Stereo Duplex
+- Starship/Matisse HD Audio Controller Digital Stereo - Profile: Digital Stereo Output + Analog Stereo Input
+
